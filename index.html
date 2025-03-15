@@ -24,128 +24,139 @@
 <body>
     
     <!-- header -->
-    <header class="container-fluid" >
-        <div class="row header-custom align-items-center p-5">
-            <div class="col-6">
-                <img class="logo mb-4" src="webina-retrogaming/aulab-logo_y.png" alt="logo">
+    <header class="container-fluid header-custom" >
+        <div class="row min-vh-100 justify-content-center align-items-center">
+            <div class="col-12 col-md-4">
+                <img class="w-25 mb-5" src="webina-retrogaming/aulab-logo_y.png" alt="logo">
                 <p> WEBINAR GRATUITO</p>
-                <h1 class="text.wh display-4 fw-bold"> Metti le mani al codice divertendoti</h1>
+                <h1> Metti le mani al codice divertendoti</h1>
                 <p>scopri come si sviluppa un videogame anni 2000</p>
                 
-                <div class="d-flex">
-                    <i class="bi bi-calendar-week text-y display-4"></i>
-                    <div><p class="mx-2 my-0 data-custom fw-bold"> 25 Luglio 2025</p>
-                        <p class="mx-2 mb-5 mt-0">ore 18.30</p></div>
+                <div class="d-flex my-5">
+                    <i class="bi bi-calendar-week h1 me-2"></i>
+                    <div>
+                        <h3 class="m-0 data"> 25 Luglio 2025 </h3>
+                        <p class="m-0">ore 18.30</p>
                     </div>
-                    
-                    <button type="button" class="btn btn-custom btn-active"> ISCRIVITI GRATUITAMENTE </button>
                 </div> 
+                <button class="btn rounded-pill px-4 py-3 btn-custom"> ISCRIVITI GRATUITAMENTE </button>
+            </div>
+            
+            <div class="col-12 col-md-4">
+                <img class="img-fluid" src="webina-retrogaming/game arcade.png" alt="immagine console">
+            </div>
+            
+        </div>
+    </header>
+    
+    <!-- section 1 -->
+    <section class="container-fluid">
+        <div class="row justify-content-center py-5">
+            
+            <div class="col-12 col-md-4 order-2 order-md-1 d-flex justify-content-cente">
+                <img src="webina-retrogaming/ico-gaming-def.png" class="w-75" alt="immagine console2">
+            </div>
+            
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <h2>Impara le basi di HTML, CSS,
+                    Javascript e PHP in modo semplice e divertente 
+                </h2>
+                <p>Se da un lato l'Ocse evidenzia per l'Italia un tasso di disoccupazione giovanile in aumento dal 28,7% pre-pandemia al 33.8% nel Gennaio del 2021, dall'altro l'osservatorio delle competenze Digitali stima che nel nostro paese ce una richiesta di oltre 100000 professionisti nel settore tech. le aziende sono alla continua ricerca di personale in ambito IT per accelerare il processo di trasformazione algitale. ma non ci sono abbastanza candiotati formati per soddisfare la domanda. Vieni a scoprire come imparare a programmare con i nostro webinar online gratuito mettendo le mani sul codice e programmando insieme a noi un vero esempio di retrogaming, un videogioco anni 2000.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- form -->
+    <section class=" container-fluid m-5">
+        <div class="row justify-content-center py-5 section-2-custom">
+            <div class="col-12 col-md-4 form-custom rounded-4 poition-relative">
+                <h2 class="fw-bold">Iscriviti Gratuitamente <br> al webinar online</h2>
                 
-                <div class="col-6">
-                    <img class="img-fluid" src="webina-retrogaming/game arcade.png" alt="immagine console">
-                </div>
-            </div>
-        </header>
-        
-        <!-- section -->
-        <section class="container">
-            <div class="row justify-content-center align-items-center">
-                
-                <div class="col-4">
-                    <img src="webina-retrogaming/ico-gaming-def.png" alt="immagine console2">
-                </div>
-                
-                <div class="col-8 my-5">
-                    <h3>Impara le basi di HTML, CSS,
-                        Javascript e PHP in modo semplice e divertente 
-                    </h3>
-                    <p>Se da un lato l'Ocse evidenzia per l'Italia un tasso di disoccupazione giovanile in aumento dal 28,7% pre-pandemia al 33.8% nel Gennaio del 2021, dall'altro l'osservatorio delle competenze Digitali stima che nel nostro paese ce una richiesta di oltre 100000 professionisti nel settore tech. le aziende sono alla continua ricerca di personale in ambito IT per accelerare il processo di trasformazione algitale. ma non ci sono abbastanza candiotati formati per soddisfare la domanda. Vieni a scoprire come imparare a programmare con i nostro webinar online gratuito mettendo le mani sul codice e programmando insieme a noi un vero esempio di retrogaming, un videogioco anni 2000.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- form -->
-
-        <section class="section-form-custom m-5">
-        <div class="form-container container">
-            <h2 class="fw-bold">Iscriviti Gratuitamente al webinar online</h2>
-            <div class="row mt-3">
-                <div class="col-2 bi bi-calendar-week icon-custom"></div>
-                <div class="col-8">
-                    <h3 class="date m-0"> 25 Luglio 2025</h3>
-                    <p class="time m-0 mb-5"> ore 18.30</p>
-                </div>
-            </div>
-
-            <form>
-                <label for="nome">Nome*</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="cognome">Cognome*</label>
-                <input type="text" id="cognome" name="cognome" required>
-
-                <label for="email">e-mail*</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="telefono">Italia +39</label>
-                <input type="tel" id="telefono" name="telefono" required>
-
-                <div class="privacy d-flex">
-                    <input type="checkbox" id="gdpr" required>
-                    <label for="gdpr">Accetto termini e condizioni (GDPR)- <a href="#"> Leggi qui*</a></label>
-                </div>
-
-                <!-- Button trigger modal -->
-                <button class="button-form-custom" type="button" data-bs-toggle="modal" data-bs-target="#Modal1"> ISCRIVITI GRATUITAMENTE</button>
-            </form>
-        </div>
-       </section> 
-
-       <!-- section chi è aulab -->
-       <section class="container-fluid m-5">
-        <div class="row justify-content-center align-items-center">
-            <img class="col-4" src="webina-retrogaming/logo-aulab-futur.png" alt="logo aulab">
-            <div class="col-8" >
-                <h3 class="title-aulab">Chi è aulab</h3>
-                <p class="p-aulab">Con i nostri corsi abbiamo aiutato più di 10.000 studenti e studentesse a muovere torimi passi nel mondo digital & tech. Nel 20 6 abbiamo lanciato Hackademv. la prima scuola di Coding in Italia con un metodo strutturato e registrato che forma in breve tempo le figure professioni olurchleste cal mercato del lavoro</p>
+                <div class="d-flex my-5">
+                    <i class="bi bi-calendar-week calendar-form text-white h1 me-2"></i>
+                    <div>
+                        <h3 class="m-0 data"> 25 Luglio 2025 </h3>
+                        <p class="m-0">ore 18.30</p>
+                    </div>
+                </div> 
+                <form class="row"> 
+                    <div class="col-12">
+                        <input type="text" class="w-100 my-3" placeholder="nome">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="w-100 my-3" placeholder="cognome">
+                    </div>
+                    <div class="col-12">
+                        <input type="email" class="w-100 my-3" placeholder="e-mail">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="w-100 my-3" placeholder="Italia">
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="w-100 my-3" placeholder="+39">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Accetto termini e condizioni (GDPR)- <a href="#"> Leggi qui*</a></label>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn rounded-pill px-4 py-3 btn-custom-form"> ISCRIVITI GRATUITAMENTE </button>
+                    </div>
+                </form>
             </div>
         </div>
-       </section>
-
-       <!-- section marco insabato -->
-        <section class="container-fluid marco-custom m-5">
-            <div class="row align-items-center justify-content-center">
-            <div class="col-8">
-                <p class="p-aulab">Io speaker</p>
-                <h2 class="title-aulab">Marco Insabato</h2>
-                <p class="p-aulab">Dooo aver comple ao hackacemve entrato a tar parte del team education di aulab prima come tutor e poi come docente. Insegna principalmente Front-end ma e appassionato al cucco cio che riguarda 1 rocrammazione •se soecialzzato in Javascriot inseonandolo e lavorando su numerosi progetti di sviluppo</p>
+    </section> 
+    
+    <!-- section chi è aulab -->
+    <section class="container-fluid">
+        <div class="row justify-content-center section-3-custom">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <img class="img-fluid w-75" src="webina-retrogaming/logo-aulab-futur.png" alt="logo aulab">
             </div>
-            <img class="col-4" src="webina-retrogaming/picture-marco-insabato-3.png" alt="foto marco">
+            <div class="col-12 col-md-4" >
+                <h2 class=" h2-title">Chi è aulab</h2>
+                <p>Con i nostri corsi abbiamo aiutato più di 10.000 studenti e studentesse a muovere torimi passi nel mondo digital & tech. Nel 20 6 abbiamo lanciato Hackademv. la prima scuola di Coding in Italia con un metodo strutturato e registrato che forma in breve tempo le figure professioni olurchleste cal mercato del lavoro</p>
             </div>
-        </section>
-
-        <!-- footer -->
-         <div class="text-center">© 2023 Aulab Tutti i diritti riservati • P.IVA IT07647440721 . Privacy Policy - Codice etico</div>
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header ">
-          <h1 class="modal-title fs-5" id="exampleModalLabel"> CI VEDIAMO AL WEBINAR ONLINE</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          Ti invieremo per email le credenziali per accedere al webinar
+    </section>
+    
+    <!-- section marco insabato -->
+    <section class="container-fluid ">
+        <div class="row justify-content-center align-items-center py-5 marco-custom m-5">
+            <div class="col-12 col-md-4 order-2 order-md-1 pe-3">
+                <p>Io speaker</p>
+                <h2 class="h2-title">Marco Insabato</h2>
+                <p>Dooo aver comple ao hackacemve entrato a tar parte del team education di aulab prima come tutor e poi come docente. Insegna principalmente Front-end ma e appassionato al cucco cio che riguarda 1 rocrammazione •se soecialzzato in Javascriot inseonandolo e lavorando su numerosi progetti di sviluppo</p>
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-2 d-flex justify-content-center">
+             <img class="col-4 img-fluid" src="webina-retrogaming/picture-marco-insabato-3.png" class="w-75" alt="foto marco">   
+            </div>
+            
         </div>
-      </div>
-    </div>
-  </div> 
-        
-        <!-- bootstrap script -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        
-    </body>
-    </html>
+    </section>
+    
+    <!-- footer -->
+    <div class="text-center">© 2023 Aulab Tutti i diritti riservati • P.IVA IT07647440721 . Privacy Policy - Codice etico</div>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"> CI VEDIAMO AL WEBINAR ONLINE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Ti invieremo per email le credenziali per accedere al webinar
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

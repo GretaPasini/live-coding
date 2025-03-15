@@ -9,8 +9,9 @@
 /* Variabili */
 :root{
 --wh: rgb(247, 247, 247) ;
---y: rgb(255, 255, 0);
---bl: rgb(7, 22, 48)
+--y: rgb(214, 195, 48);
+--bl: rgb(27, 21, 64);
+--pl: rgb(187,38,193);
 }
 
 body{
@@ -27,19 +28,8 @@ body{
 }
 
 /* header */
-
 .header-custom{
-    height: 90vh;
-    width: 100%;
     background-image: url(webina-retrogaming/bg-1.jpg);
-}
-
-.logo{
-    height: 30px;
-}
-
-.data-custom{
-    font-size: 25px;
 }
 
 .btn-custom{
@@ -47,73 +37,65 @@ body{
    border: 1px solid var(--y);
 }
 
+.btn-custom:hover{
+    background-color: var(--y);
+    transition: 0.5s;
+}
+
+.bi-calendar-week{
+    color: var(--y);
+}
+
+.data{
+    font-weight: 700;
+}
+
+
 /* form */
-.section-form-custom{
-    background-image: url(webina-retrogaming/bg-2.jpg);
-}
-
-.form-container{
-    background: rgba(0,0,0,0.7);
-    padding: 50px;
-    border-radius: 15px;
-    width: 350px;
-    text-align: center;
-}
-
-.icon-custom{
-    font-size: 40px;
-    background: var(--y);
-    color: var(--wh);
-    padding: 3px;
-    width: 70px;
-    height: 70px;
+.calendar-form{
+    font-size: 50px;
+    margin-right: 20px;
+    background-color: var(--y);
     border-radius: 50%;
+    padding: 10px 20px;
 }
 
-.time{
-    font-size: 14px;
+.section-2-custom{
+    min-height: 70vh;
+   background-image: url(webina-retrogaming/bg-2.jpg);
+   background-size: cover;
+   background-position: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
+.form-custom{
+    background-color: var(--bl);
+    padding: 70px 20px;
+    top: 100px;
 }
 
 input{
-    padding: 10px;
-    border: 2px solid var(--y);
-    border-radius: 5px;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.button-form-custom{
-    background-color: var(--y);
-    color: black;
-    border-radius: 20px;
-    border: 2px solid var(--y);
-}
-
-/* modal */
-#Modal1{
     background-color: var(--bl);
-    color: var(--bl);
+    border: none;
+    border-bottom: 1px solid var(--pl);
 }
 
-.modal-header, .modal-body{
-background-color: var(--y);
+.btn-custom-form{
+    background-color: var(--y);
 }
 
 /* section chi è aulab */
-.title-aulab{
-    color: var(--y);
+.section-3-custom{
+    background-color: var(--bl);
+    padding: 10px 20px;
 }
- 
-.p-aulab{
-    font-size: 14px;
+
+.h2-title{
+    color: var(--y);
 }
 
 /* section marco */
 .marco-custom{
     background-image: url(webina-retrogaming/bg-3.jpg);
+    background-size: cover;
+    background-position: center;
 }
